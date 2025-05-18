@@ -1,2 +1,11 @@
-hex_stats
-huff_gen
+*/build
+*.d
+*.o
+*.a
+*.so
+*.core
+*.out
+massif.out.*
+perf.data
+perf.data.*
+vgcore.*
