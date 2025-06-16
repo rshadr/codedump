@@ -58,6 +58,9 @@ spGraphicsGetRequiredExtensions (SpGraphics *gfx, uint32_t *count)
   if (gfx->options->enable_validation_layers)
     extensions[*count - 1] = VK_EXT_DEBUG_UTILS_EXTENSION_NAME;
 
+  for (uint32_t i = 0; i < *count; ++i)
+    printf("  %s\n", extensions[i]);
+
   return extensions;
 }
 
